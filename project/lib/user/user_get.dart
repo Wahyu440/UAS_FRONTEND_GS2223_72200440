@@ -103,13 +103,11 @@ class _User_getState extends State<User_get> {
               itemBuilder: (context,index){
                 return Padding(
                   padding: const EdgeInsets.all(10),
-                  child: ListTile(
-                    shape: RoundedRectangleBorder(
-                      side: BorderSide(color: Colors.black45, width: 1),
-                      borderRadius: BorderRadius.circular(5),
+                  child: Card(
+                    child: ListTile(
+                      title: Text(_get[index]['name']),
+                      subtitle: Text(_get[index]['email']),
                     ),
-                    title: Text(_get[index]['username'] + "-" + _get[index]['name']),
-                    subtitle: Text(_get[index]['email']),
                   ),
                 );
               }),

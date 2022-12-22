@@ -103,13 +103,14 @@ class _Photo_getState extends State<Photo_get> {
               itemBuilder: (context,index){
                 return Padding(
                   padding: const EdgeInsets.all(10),
-                  child: ListTile(
-                    shape: RoundedRectangleBorder(
-                      side: BorderSide(color: Colors.black45, width: 1),
-                      borderRadius: BorderRadius.circular(5),
+                  child: Card(
+                    child: ListTile(
+                      leading: CircleAvatar(
+                            backgroundImage:
+                            NetworkImage(_get[index]['url']),
+                          ),
+                      title: Text(_get[index]['title']),
                     ),
-                    title: Text(_get[index]['title']),
-                    subtitle: Text(_get[index]['url']),
                   ),
                 );
               }),
