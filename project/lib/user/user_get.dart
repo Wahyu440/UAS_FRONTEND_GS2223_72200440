@@ -108,7 +108,7 @@ class _User_getState extends State<User_get> {
                       side: BorderSide(color: Colors.black45, width: 1),
                       borderRadius: BorderRadius.circular(5),
                     ),
-                    title: Text(_get[index]['id'] + "-" + _get[index]['name']),
+                    title: Text(_get[index]['username'] + "-" + _get[index]['name']),
                     subtitle: Text(_get[index]['email']),
                   ),
                 );

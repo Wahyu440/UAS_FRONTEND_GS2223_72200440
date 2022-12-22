@@ -108,8 +108,8 @@ class _Comment_getState extends State<Comment_get> {
                       side: BorderSide(color: Colors.black45, width: 1),
                       borderRadius: BorderRadius.circular(5),
                     ),
-                    title: Text(_get[index]['postId'] + "-" + _get[index]['id']),
-                    subtitle: Text(_get[index]['name']),
+                    title: Text(_get[index]['name'] + "-" + _get[index]['email']),
+                    subtitle: Text(_get[index]['body']),
                   ),
                 );
               }),

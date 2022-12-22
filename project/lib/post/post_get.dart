@@ -108,8 +108,8 @@ class _Post_getState extends State<Post_get> {
                       side: BorderSide(color: Colors.black45, width: 1),
                       borderRadius: BorderRadius.circular(5),
                     ),
-                    title: Text(_get[index]['userId'] + "-" + _get[index]['id']),
-                    subtitle: Text(_get[index]['title']),
+                    title: Text(_get[index]['title']),
+                    subtitle: Text(_get[index]['body']),
                   ),
                 );
               }),
